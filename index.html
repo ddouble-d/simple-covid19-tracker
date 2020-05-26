@@ -1,0 +1,284 @@
+<!--
+
+=========================================================
+* Argon Design System - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-design-system
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Start your development with a Design System for Bootstrap 4."
+    />
+    <meta name="author" content="Creative Tim" />
+    <title>Argon Design System - Free Design System for Bootstrap 4</title>
+    <!-- Favicon -->
+    <link
+      href="./argon-design-system-master/assets/img/brand/favicon.png"
+      rel="icon"
+      type="image/png"
+    />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      href="./argon-design-system-master/assets/vendor/nucleo/css/nucleo.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./argon-design-system-master/assets/vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Argon CSS -->
+    <link
+      type="text/css"
+      href="./argon-design-system-master/assets/css/argon.css?v=1.1.0"
+      rel="stylesheet"
+    />
+    <style>
+      img#flag {
+        width: 35px;
+        height: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header-global">
+      <nav
+        id="navbar-main"
+        class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom"
+      >
+        <!-- <div class="container">
+          <a class="navbar-brand mr-lg-5" href="./index.html">
+            <img
+              alt="image"
+              src="./argon-design-system-master/assets/img/brand/white.png"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar_global"
+            aria-controls="navbar_global"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar_global">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
+                  <a href="./index.html">
+                    <img
+                      alt="image"
+                      src="./argon-design-system-master/assets/img/brand/blue.png"
+                    />
+                  </a>
+                </div>
+                <div class="col-6 collapse-close">
+                  <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbar_global"
+                    aria-controls="navbar_global"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </nav>
+    </header>
+
+    <main>
+      <div class="position-relative">
+        <!-- Hero for FREE version -->
+        <section class="section section-lg section-hero section-shaped">
+          <!-- Background circles -->
+          <div class="shape shape-style-1 shape-primary">
+            <span class="span-150"></span>
+            <span class="span-50"></span>
+            <span class="span-50"></span>
+            <span class="span-75"></span>
+            <span class="span-100"></span>
+            <span class="span-75"></span>
+            <span class="span-50"></span>
+            <span class="span-100"></span>
+            <span class="span-50"></span>
+            <span class="span-100"></span>
+          </div>
+
+          <div
+            class="container shape-container d-flex align-items-center py-lg"
+          >
+            <div class="row justify-content-center">
+              <div class="mt--100">
+                <h2 class="text-white">
+                  Kasus COVID-19 di <span id="country"></span>
+                  <img src="" id="flag" />
+                </h2>
+              </div>
+              <div class="col-lg-12">
+                <div class="row row-grid">
+                  <div class="col-lg-4">
+                    <div class="card card-lift--hover shadow border-0">
+                      <div class="card-body py-5">
+                        <div
+                          class="icon icon-shape icon-shape-primary rounded-circle mb-4"
+                        >
+                          <i class="ni ni-check-bold"></i>
+                        </div>
+                        <h6 class="text-primary text-uppercase">
+                          Kasus Aktif
+                        </h6>
+                        <span id="n_active"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card card-lift--hover shadow border-0">
+                      <div class="card-body py-5">
+                        <div class="row">
+                          <div class="col">
+                            <h6
+                              class="card-title text-uppercase text-muted mb-0"
+                            >
+                              Total Kasus
+                            </h6>
+                            <b><span id="n_cases"></span></b>
+                            <p class="mt-3 mb-0 text-sm">
+                              <span class="text-danger mr-2"
+                                ><i class="fa fa-arrow-up"></i
+                              ></span>
+                              <span
+                                class="text-danger mr-2 font-weight-bold"
+                                id="n_casesToday"
+                              ></span>
+                              <span class="text-nowrap">Kasus hari ini</span>
+                            </p>
+                          </div>
+                          <div class="col-auto">
+                            <div
+                              class="icon icon-shape icon-shape-success rounded-circle mb-4"
+                            >
+                              <i class="ni ni-istanbul"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card card-lift--hover shadow border-0">
+                      <div class="card-body py-5">
+                        <div
+                          class="icon icon-shape icon-shape-warning rounded-circle mb-4"
+                        >
+                          <i class="ni ni-planet"></i>
+                        </div>
+                        <h6 class="text-warning text-uppercase">
+                          Kasus Kritis
+                        </h6>
+                        <span id="n_critical"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card card-lift--hover shadow border-0 mt-5">
+                      <div class="card-body py-5">
+                        <div
+                          class="icon icon-shape icon-shape-primary rounded-circle mb-4"
+                        >
+                          <i class="ni ni-check-bold"></i>
+                        </div>
+                        <h6 class="text-primary text-uppercase">
+                          Total Meninggal
+                        </h6>
+                        <span id="n_deaths"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card card-lift--hover shadow border-0 mt-5">
+                      <div class="card-body py-5">
+                        <div
+                          class="icon icon-shape icon-shape-success rounded-circle mb-4"
+                        >
+                          <i class="ni ni-istanbul"></i>
+                        </div>
+                        <h6 class="text-success text-uppercase">
+                          Total Sembuh
+                        </h6>
+                        <span id="n_recovered"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card card-lift--hover shadow border-0 mt-5">
+                      <div class="card-body py-5">
+                        <div
+                          class="icon icon-shape icon-shape-warning rounded-circle mb-4"
+                        >
+                          <i class="ni ni-planet"></i>
+                        </div>
+                        <h6 class="text-warning text-uppercase">
+                          Total Tes Dilakukan
+                        </h6>
+                        <span id="n_test"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
+<script>
+  fetch("https://corona.lmao.ninja/v2/countries/Indonesia")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      document.getElementById("flag").src = data.countryInfo.flag;
+      document.getElementById("country").innerHTML = data.country;
+      document.getElementById("n_active").innerHTML = data.active;
+      document.getElementById("n_cases").innerHTML = data.cases;
+      document.getElementById("n_casesToday").innerHTML = data.todayCases;
+      document.getElementById("n_deaths").innerHTML = data.deaths;
+      document.getElementById("n_critical").innerHTML = data.critical;
+      document.getElementById("n_recovered").innerHTML = data.recovered;
+      document.getElementById("n_test").innerHTML = data.tests;
+    });
+</script>
